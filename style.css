@@ -1,0 +1,71 @@
+body{
+    background: linear-gradient(to right,#141e30,#243b55);
+    color: #ffffff;
+    font-family: 'Roboto','sans-serif';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+h1{
+    color: #db29ff;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    background: linear-gradient(to bottom,#ffffff,#f2f5f8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+#timer{
+    font-size: 3rem;
+    margin: 20px;
+    background: linear-gradient(to right,#61dafb,#2979ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#timer-input{
+    padding: 5px;
+    border: 2px solid #bb29ff;
+    border-radius: 15px;
+}
+#control{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.timer-key{
+    background: linear-gradient(to right,#d429ff,#61dafb);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #ffffff;
+}
+.timer-key:hover{
+    background:linear-gradient(to right,#d429ff,#61dafb) ;
+    color: #ffffff;
+}
+.motion-effect{
+    animation:motion 1s infinite;
+}
+@keyframes motion{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-5px);}
+    100%{transform: translateY(0);}
+}
+#mylink{
+    display: flex;
+    align-items: center;
+    color: #c19dc7;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
